@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Linux-Best 100+ Commands</title>
+</head>
+<body>
+			<h1 align="center" >Linux-Best 100+ Commands</h1>
+			<br><br><br><br><br><br>
+
+
+<h2 >1. Linux-Network Commands</h2>
+
+<!-- One tabal  -->
+<details placeholder="datral">
+	<!-- One table start  -->
+<table  border="1" >
+	<thead>
+		<tr >
+			<th><code><span style="font-family:&quot;Times New Roman&quot;,Times,serif"><span style="font-size:14px">COMMAND</span></span></code></th>
+			<th><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">DESCRIPTION</span></span></code></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">netstat -tulpn</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Show Linux network ports with process ID&#39;s (PIDs)</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">watch ss -stplu</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Watch TCP, UDP open ports in real time with socket summary.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">lsof -i</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Show established connections.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">macchanger -m MACADDR INTR</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Change MAC address on KALI Linux.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">ifconfig eth0 192.168.2.1/24</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Set IP address in Linux.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">ifconfig eth0:1 192.168.2.3/24</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Add IP address to existing network interface in Linux.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">ifconfig eth0 hw ether MACADDR</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Change MAC address in Linux using ifconfig.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">ifconfig eth0 mtu 1500</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Change MTU size Linux using ifconfig, change 1500 to your desired MTU.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">dig -x 192.168.1.1 </span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-size:14px">Dig reverse lookup on an IP address.</span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">host 192.168.1.1 </span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Reverse lookup on an IP address, in case dig is not installed.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">dig @192.168.2.2 domain.com -t AXFR</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Perform a DNS zone transfer using dig.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">host -l domain.com nameserver</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Perform a DNS zone transfer using host.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">nbtstat -A x.x.x.x</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Get hostname for IP address.</span></span></code></p>
+			</td>
+		</tr>
+		<tr style="">
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">ip addr add 192.168.2.22/24 dev eth0</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Adds a hidden IP address to Linux, does not show up when performing an ifconfig.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">tcpkill -9 host google.com</span></span></code></p>
+			</td>
+			<td style="">
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Blocks access to google.com from the host machine.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:13px">echo &quot;1&quot; &gt; /proc/sys/net/ipv4/ip_forward</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Enables IP forwarding, turns Linux box into a router - handy for routing traffic through a box.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">echo &quot;8.8.8.8&quot; &gt; /etc/resolv.conf</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Use Google DNS.</span></span></code></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</details>
+<!-- End One table  -->
+<br>
+<br>
+
+
+<!-- Two table -->
+<h2  >2. Linux-Interesting File / Dir's</h2>
+<!-- start -->
+<details>
+<p ><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Places that are worth a look if you are attempting to privilege escalate / perform post exploitation.</span></span></code></p>
+
+<table border="1">
+	<thead>
+		<tr>
+			<th><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">DIRECTORY</span></span></code></th>
+			<th><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">DESCRIPTION</span></span></code></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">/etc/passwd</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Contains local Linux users.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">/etc/shadow</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Contains local account password hashes.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">/etc/group</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Contains local account groups.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">/etc/init.d/</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Contains service init script - worth a look to see whats installed.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">/etc/hostname</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">System hostname.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">/etc/network/interfaces</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Network interfaces.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">/etc/resolv.conf</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">System DNS servers.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">/etc/profile</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">System environment variables.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">~/.ssh/</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">SSH keys.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">~/.bash_history</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Users bash history log.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">/var/log/</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Linux system log files are typically stored here.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">/var/adm/</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">UNIX system log files are typically stored here.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">/var/log/apache2/access.log</span></span></code></p>
+
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">/var/log/httpd/access.log</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Apache access log file typical path.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">/etc/fstab</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">File system mounts.</span></span></code></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</details>
+<!-- End Two table -->
+
+<br><br>
+
+
+<h2>3. Linux-File System information</h2>
+
+
+<!-- three tabel start -->
+<details>
+
+
+	<table  border="1">
+		<thead>
+			<tr>
+				<th><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">DIRECTORY</span></span></code></th>
+				<th><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">DESCRIPTION</span></span></code></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">/</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">/ also know as &quot;slash&quot; or the root.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">/bin</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Common programs, shared by the system, the system administrator and the users.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">/boot</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Boot files, boot loader (grub), kernels, vmlinuz</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">/dev</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Contains references to system devices, files with special properties.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">/etc</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Important system config files.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">/home</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Home directories for system users.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">/lib</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Library files, includes files for all kinds of programs needed by the system and the users.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">/lost+found</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Files that were saved during failures are here.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">/mnt</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Standard mount point for external file systems.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">/media</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Mount point for external file systems (on some distros).</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">/net</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Standard mount point for entire remote file systems - nfs.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">/opt</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Typically contains extra and third party software.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">/proc</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">A virtual file system containing information about system resources.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">/root</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">root users home dir.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">/sbin</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Programs for use by the system and the system administrator.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">/tmp</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Temporary space for use by the system, cleaned upon reboot.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">/usr</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Programs, libraries, documentation etc. for all user-related programs.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">/var</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Storage for all variable files and temporary files created by users, such as log files, mail queue, print spooler. Web servers, Databases etc.</span></span></code></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</details>
+<!--End three tabel  -->
+
+<br><br>
+
+<h2>4. Linux-File System Permissing</h2>
+
+<!-- four tabel start -->
+
+<details>
+	<table  border="1">
+		<thead>
+			<tr>
+				<th><tt><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">VALUE</span></span></tt></th>
+				<th><tt><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">MEANING</span></span></tt></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+				<p><tt><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px"><code>777</code></span></span></tt></p>
+				</td>
+				<td>
+				<p><tt><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px"><code>rwxrwxrwx</code>&nbsp;No restriction, global WRX any user can do anything.</span></span></tt></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><tt><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px"><code>755</code></span></span></tt></p>
+				</td>
+				<td>
+				<p><tt><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px"><code>rwxr-xr-x</code>&nbsp;Owner has full access, others can read and execute the file.</span></span></tt></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><tt><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px"><code>700</code></span></span></tt></p>
+				</td>
+				<td>
+				<p><tt><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px"><code>rwx------</code>&nbsp;Owner has full access, no one else has access.</span></span></tt></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><tt><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px"><code>666</code></span></span></tt></p>
+				</td>
+				<td>
+				<p><tt><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px"><code>rw-rw-rw-</code>&nbsp;All users can read and write but not execute.</span></span></tt></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><tt><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px"><code>644</code></span></span></tt></p>
+				</td>
+				<td>
+				<p><tt><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px"><code>rw-r--r--</code>&nbsp;Owner can read and write, everyone else can read.</span></span></tt></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><tt><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px"><code>600</code></span></span></tt></p>
+				</td>
+				<td>
+				<p><tt><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px"><code>rw-------</code>&nbsp;Owner can read and write, everyone else has no access.</span></span></tt></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+</details>
+
+<!-- End four tabel -->
+
+<br><br>
+
+<h2>5. Linux-Misc Commands</h2>
+
+<!-- five tabel start -->
+
+<details>
+<div>
+	<table  border="1">
+		<thead>
+			<tr>
+				<th><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">COMMAND</span></span></code></th>
+				<th><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">DESCRIPTION</span></span></code></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">init 6</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Reboot Linux from the command line.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">gcc -o output.c input.c</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Compile C code.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">gcc -m32 -o output.c input.c</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Cross compile C code, compile 32 bit binary on 64 bit Linux.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">unset HISTORYFILE</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Disable bash history logging.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">rdesktop X.X.X.X</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Connect to RDP server from Linux.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">kill -9 $$</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Kill current session.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">chown user:group blah</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Change owner of file or dir.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">chown -R user:group blah</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Change owner of file or dir and all underlying files / dirs - recersive chown.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">chmod 600 file</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Change file / dir permissions, see [Linux File System Permissons](#linux-file-system-permissions) for details.</span></span></code></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	
+
+	
+	<footer>
+		<pre >
+
+Clear bash history:
+
+		$ ssh user@X.X.X.X | cat /dev/null &gt; ~/.bash_history
+	</pre>
+	</footer>
+</div>
+</details>
+
+<br><br>
+
+<h2>6. Linux-File Commands</h2>
+
+<!-- six tabel start  -->
+
+<details>
+	<table border="1">
+		<thead>
+			<tr>
+				<th><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">COMMAND</span></span></code></th>
+				<th><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">DESCRIPTION</span></span></code></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">df -h blah</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Display size of file / dir Linux.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">diff file1 file2</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Compare / Show differences between two files on Linux.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">md5sum file</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Generate MD5SUM Linux.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">md5sum -c blah.iso.md5</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Check file against MD5SUM on Linux, assuming both file and .md5 are in the same dir.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">file blah</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Find out the type of file on Linux, also displays if file is 32 or 64 bit.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">dos2unix</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Convert Windows line endings to Unix / Linux.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">base64 &lt; input-file &gt; output-file</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Base64 encodes input file and outputs a Base64 encoded file called output-file.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">base64 -d &lt; input-file &gt; output-file</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Base64 decodes input file and outputs a Base64 decoded file called output-file.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">touch -r ref-file new-file</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Creates a new file using the timestamp data from the reference file, drop the -r to simply create a file.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">rm -rf</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Remove files and directories without prompting for confirmation.</span></span></code></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+</details>
+<!-- End six tabel -->
+<br><br>
+
+<!-- seven table start -->
+<h2>7. Linux-Compression Commands</h2>
+
+<details>
+	<table  border="1">
+		<thead>
+			<tr>
+				<th><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">COMMAND</span></span></code></th>
+				<th><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">DESCRIPTION</span></span></code></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">zip -r file.zip /dir/*</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Creates a .zip file on Linux.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">tar cf archive.tar files</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Creates a tar file on Linux.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">tar czf archive.tar.gz files</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Creates a tar.gz file on Linux.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">tar cjf archive.tar.bz2 files</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Creates a tar.bz2 file on Linux.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">gzip file</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Creates a file.gz file on Linux.</span></span></code></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</details>
+
+<!-- End seven tabel -->
+
+
+<br><br>
+
+<!-- Start Eight tabel --> 
+
+<h2>8. Linux-Decompression Commands</h2>
+
+<details>
+	<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">How to extract various archives (tar, zip, gzip, bzip2 etc) on Linux and some other tricks for searching inside of archives etc.</span></span></code></p>
+
+<table border="1">
+	<thead>
+		<tr>
+			<th><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">COMMAND</span></span></code></th>
+			<th><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">DESCRIPTION</span></span></code></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">unzip archive.zip</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Extracts zip file on Linux.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">zipgrep *.txt archive.zip</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Search inside a .zip archive.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">tar xf archive.tar</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Extract tar file Linux.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">tar xvzf archive.tar.gz</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Extract a tar.gz file Linux.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">tar xjf archive.tar.bz2</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Extract a tar.bz2 file Linux.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">tar ztvf file.tar.gz | grep blah</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Search inside a tar.gz file.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">gzip -d archive.gz</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Extract a gzip file Linux.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">zcat archive.gz</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Read a gz file Linux without decompressing.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">zless archive.gz</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Same function as the&nbsp;less&nbsp;command for .gz archives.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">zgrep &#39;blah&#39; /var/log/maillog*.gz</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Search inside .gz archives on Linux, search inside of compressed log files.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">vim file.txt.gz</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Use vim to read .txt.gz files (my personal favorite).</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">upx -9 -o output.exe input.exe</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">UPX compress .exe file Linux.</span></span></code></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</details>
+<!-- End Eight table -->
+
+<br><br>
+
+<!-- Statrt Nine tabel -->
+
+<h2>9. Linux-User Management</h2>
+
+<details>
+	<table  border="1">
+		<thead>
+			<tr>
+				<th><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">COMMAND</span></span></code></th>
+				<th><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">DESCRIPTION</span></span></code></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">useradd new-user</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Creates a new Linux user.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">passwd username</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Reset Linux user password, enter just&nbsp;passwd&nbsp;if you are root.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">deluser username</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Remove a Linux user.</span></span></code></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</details>
+
+
+<!-- End Nine tabel -->
+
+<br><br>
+
+
+<!-- Start Ten Tabel -->
+
+<h2>10. Linux-System Info Commands</h2>
+
+<details>
+	<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Useful for local enumeration.</span></span></code></p>
+
+<table border="1">
+	<thead>
+		<tr>
+			<th><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">COMMAND</span></span></code></th>
+			<th><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">DESCRIPTION</span></span></code></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">whoami</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Shows currently logged in user on Linux.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">id</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Shows currently logged in user and groups for the user.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">last</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Shows last logged in users.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">mount</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Show mounted drives.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">df -h</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Shows disk usage in human readable output.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">echo &quot;user:passwd&quot; | chpasswd</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Reset password in one line.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">getent passwd</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">List users on Linux.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">strings /usr/local/bin/blah</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Shows contents of none text files, e.g. whats in a binary.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">uname -ar</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Shows running kernel version.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">PATH=$PATH:/my/new-path</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Add a new PATH, handy for local FS manipulation.</span></span></code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">history</span></span></code></p>
+			</td>
+			<td>
+			<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Show bash history, commands the user has entered previously.</span></span></code></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</details>
+
+<!-- End Ten table  -->
+<br><br>
+
+
+<!-- Start eleven tabel -->
+
+<h2>11. Linux-Breaking Out Limited Shells</h2>
+
+<details>
+	<p>Credit to G0tmi1k for these (or wherever he stole them from!).</p>
+
+<p>The Python trick:</p>
+
+<figure>
+<pre>
+<code data-lang="python">python -c 'import pty;pty.spawn("/bin/bash")'</code></pre>
+</figure>
+
+<figure>
+<pre>
+<code data-lang="bash">echo os.system('/bin/bash')</code></pre>
+</figure>
+
+<figure>
+<pre>
+<code data-lang="bash">/bin/sh -i</code></pre>
+</figure>
+</details>
+
+<!-- End eleven Tabel -->
+
+
+<br><br>
+
+<!-- Start twelve tabel -->
+
+<h2>12. Linux-Samba Commands</h2>
+
+<details>
+	<p data-animation-bg="" data-animation-outline="" style="">Connect to a Samba share from Linux.</p>
+
+<figure>
+<pre>
+<code data-lang="bash">$ smbmount //server/share /mnt/win -o user=username,password=password1
+$ smbclient -U user \\\\server\\share
+$ mount -t cifs -o username=user,password=password //x.x.x.x/share /mnt/share</code></pre>
+</figure>
+</details>
+
+<!-- End twelve tabel -->
+
+<br><br> 
+
+<!-- Start Thirteen tabel -->
+
+<h2>13. Linux-YUM commands</h2>
+
+<details>
+	<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Package manager used by RPM based systems, you can pull some usefull information about installed packages and or install additional tools.</span></span></code></p>
+
+	<table  border="1">
+		<thead>
+			<tr>
+				<th><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">COMMAND</span></span></code></th>
+				<th><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">DESCRIPTION</span></span></code></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">yum update</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Update all RPM packages with YUM, also shows whats out of date.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">yum update httpd</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Update individual packages, in this example HTTPD (Apache).</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">yum install package</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Install a package using YUM.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">yum --exclude=package kernel* update</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Exclude a package from being updates with YUM.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">yum remove package</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Remove package with YUM.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">yum erase package</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Remove package with YUM.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">yum list package</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Lists info about yum package.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">yum provides httpd</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">What a packages does, e.g Apache HTTPD Server.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">yum info httpd</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Shows package info, architecture, version etc.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">yum localinstall blah.rpm</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Use YUM to install local RPM, settles deps from repo.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">yum deplist package</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Shows deps for a package.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">yum list installed | more</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">List all installed packages.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">yum grouplist | more</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Show all YUM groups.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">yum groupinstall &#39;Development Tools&#39;</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Install YUM group.</span></span></code></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</details>
+
+<!-- End Thirteen tabel -->
+
+<br><br>
+
+<!-- start Fourteen tabel -->
+
+<h2>14. Debian/Ubuntu/.deb Based Distros</h2>
+
+<details>
+	<table border="1">
+		<thead>
+			<tr>
+				<th><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">COMMAND</span></span></code></th>
+				<th><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">DESCRIPTION</span></span></code></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">cat /etc/debian_version</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Shows Debian version number.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">cat /etc/*-release</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Shows Ubuntu version number.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">dpkg -l</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">List all installed packages on Debian / .deb based Linux distro.</span></span></code></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</details>
+
+<!-- End Fourteen tabel -->
+
+<br><br>
+
+<!-- Start fifteen tabel -->
+
+<h2>15. Redhad / ConOS / RPM Based Distros</h2>
+
+<details>
+	<table  border="1">
+		<thead>
+			<tr>
+				<th><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">COMMAND</span></span></code></th>
+				<th><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">DESCRIPTION</span></span></code></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">cat /etc/redhat-release</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Shows Redhat / CentOS version number.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">rpm -qa</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">List all installed RPM&#39;s on an RPM based Linux distro.</span></span></code></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">rpm -q --changelog openvpn</span></span></code></p>
+				</td>
+				<td>
+				<p><code><span style="font-family:Times New Roman,Times,serif"><span style="font-size:14px">Check installed RPM is patched against CVE, grep the output for CVE.</span></span></code></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</details>
+
+<!-- End fifteen tabel -->
+
+</body>
+</html>
